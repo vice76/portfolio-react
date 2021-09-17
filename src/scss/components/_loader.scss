@@ -1,0 +1,58 @@
+* {
+	box-sizing: border-box;
+}
+.loader {
+	position: relative;
+	margin: 75px auto;
+	width: 150px;
+	height: 150px;
+	display: block;
+	overflow: hidden;
+	div {
+		height: 100%;
+	}
+}
+
+/* loader 1 */
+.loader1, .loader1 div {
+	@include loaderDivMixin;
+	border-top-color: $grey;
+	border-bottom-color: $blue;
+}
+
+
+div:hover {
+	animation-play-state: paused;
+}
+
+.loader, .loader * {
+	will-change: transform;
+}
+
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes rotate2 {
+	0% {
+		transform: rotate(0deg);
+		border-top-color: $grey;
+	}
+	50% {
+		transform: rotate(180deg);
+		border-top-color: $blue;
+	}
+	100% {
+		transform: rotate(360deg);
+		border-top-color: $grey;
+	}
+}

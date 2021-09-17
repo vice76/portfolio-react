@@ -1,4 +1,4 @@
-@import "./scss/main";
+@import "./scss/main.scss";
 
 body {
   margin: 0;
@@ -9,7 +9,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+  height: 100%;
 }
