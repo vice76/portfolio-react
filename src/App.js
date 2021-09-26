@@ -1,11 +1,11 @@
-import Loader from "./components/loader/Loader";
+import Cursor from "./components/cursor/Cursor";
 
-const App=() => {
+const App = () => {
   return (
     <div className="App">
-      <Loader/>
+      <Cursor />
     </div>
   );
-}
+};
 
 export default App;

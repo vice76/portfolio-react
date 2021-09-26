@@ -13,7 +13,6 @@
 	}
 }
 
-/* loader 1 */
 .loader1, .loader1 div {
 	@include loaderDivMixin;
 	border-top-color: $grey;
