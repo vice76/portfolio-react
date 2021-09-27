@@ -12,7 +12,9 @@
         a{
             color: white;
             text-decoration: none;
-            margin-top: .2rem;
+            margin-top: .3rem;
+            font-size: .9rem;
+            font-weight: 600;
         }
         @include mp-fx-layout-with-gap(row, 4rem)
     }
