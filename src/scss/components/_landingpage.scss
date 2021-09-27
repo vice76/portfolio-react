@@ -1,3 +1,9 @@
-.mainpage_left{
-    text-align: center;
+.mainpage{
+    display: flex;
+    flex-wrap: wrap;
+    .mainpage_left{
+        height: 41.9rem;
+        flex: 21px .59;
+        background-color: rgba(91, 138, 114, 0.9);;
+    }
 }
