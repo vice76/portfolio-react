@@ -6,3 +6,52 @@
 	border: 2px solid transparent;
 	animation: rotate linear 3.5s infinite;
 }
+
+/* These mixins are replacement of Flex Layout*/
+
+// For DOM containers
+// Replacement of fxLayout
+// eg, fxLayout="row" -> @include mp-fx-layout(row)
+// eg, fxLayout.xs="row" -> @include mp-fx-layout(row, xs)
+@mixin mp-fx-layout($direction) {
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: $direction;
+  }
+  
+  // For DOM containers
+  // Replacement of fxLayout with fxLayoutGap
+  // eg, fxLayout="row" fxLayoutGap="10px" -> @include mp-fx-layout-with-gap(row, 10px)
+  // eg, fxLayout.xs="row" fxLayoutGap.xs="10px" -> @include mp-fx-layout-with-gap(row, 10px, xs)
+  @mixin mp-fx-layout-with-gap($direction, $value) {
+	@include mp-fx-layout($direction);
+	@if ($direction == row) {
+	  > * {
+		margin-right: $value;
+	  }
+	  > *:last-child {
+		margin-right: 0;
+	  }
+	} @else if ($direction == column) {
+	  > * {
+		margin-bottom: $value;
+	  }
+	  > *:last-child {
+		margin-bottom: 0;
+	  }
+	} @else if ($direction == reverse-row) {
+	  > * {
+		margin-left: $value;
+	  }
+	  > *:last-child {
+		margin-left: 0;
+	  }
+	} @else if ($direction == reverse-column) {
+	  > * {
+		margin-top: $value;
+	  }
+	  > *:last-child {
+		margin-top: 0;
+	  }
+	}
+  }

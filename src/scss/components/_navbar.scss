@@ -1,0 +1,22 @@
+.nav-container {
+
+    .nav__left{
+        padding-top: 2rem;
+        img{
+            padding: 0 0 0 16rem;
+        }
+        a{
+            margin-top: .2rem;
+        }
+        
+        .instagram {
+            margin-left: 18rem;
+        }
+        div{
+            color: #5B8A72E5;
+        }
+        
+        @include mp-fx-layout-with-gap(row, 3rem);
+    }
+    
+}
