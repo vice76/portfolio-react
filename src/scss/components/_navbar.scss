@@ -1,22 +1,27 @@
 .nav-container {
-
-    .nav__left{
-        padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    
+    .nav__mid{
+        flex: 15px .6;
+        background-color: #BFCBA8;
+        padding: 1rem;
         img{
-            padding: 0 0 0 16rem;
+            padding: 0 4rem 0 16rem;
         }
         a{
+            color: white;
+            text-decoration: none;
             margin-top: .2rem;
         }
-        
-        .instagram {
-            margin-left: 18rem;
-        }
-        div{
-            color: #5B8A72E5;
-        }
-        
-        @include mp-fx-layout-with-gap(row, 3rem);
+        @include mp-fx-layout-with-gap(row, 4rem)
     }
-    
+    .nav__right{
+        flex: 10px .28;
+        color: #5B8A72;
+        margin-top: .2rem;
+        padding: 1rem;
+        @include mp-fx-layout-alignment(center,column);
+        @include mp-fx-layout-with-gap(row, 1rem);
+    }
 }

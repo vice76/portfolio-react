@@ -8,11 +8,16 @@ import logo from "../../assests/Arpit Yadav.png";
 const Navbar = () => {
   return (
     <div className="nav-container">
-      <div className="nav__left">
+      <div className="nav__mid">
         <img src={logo} alt="Arpit Yadav" />
         <a href="#">work.</a>
         <a href="#">skills.</a>
         <a href="#">say hi!</a>
+      </div>
+      <div className="nav__right">
+        <GitHubIcon />
+        <InstagramIcon />
+        <LinkedInIcon />
       </div>
     </div>
   );

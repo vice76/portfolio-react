@@ -55,3 +55,15 @@
 	  }
 	}
   }
+
+  // For DOM containers
+// Replacement of fxLayoutAlign
+// eg, fxLayoutAlignment="start center" -> @include mp-fx-layout-alignment(start, center)
+@mixin mp-fx-layout-alignment(
+	$main-axis-alignment,
+	$cross-axis-alignment
+  ) {
+	justify-content: $main-axis-alignment;
+	align-items: $cross-axis-alignment;
+	align-content: $cross-axis-alignment;
+  }
