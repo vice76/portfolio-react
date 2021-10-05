@@ -10,7 +10,7 @@ const Landingpage = () => {
           <span>👇</span>
           <p>Meet Arpit Yadav</p>
         </div>
-        <svg width="63" height="104" viewBox="0 0 133 194" fill="none">
+        <svg width="63" height="114" viewBox="0 0 133 194" fill="none">
           <rect
             x="44"
             y="38"
