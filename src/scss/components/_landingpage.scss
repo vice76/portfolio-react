@@ -2,9 +2,36 @@
     display: flex;
     flex-wrap: wrap;
     .mainpage_left{
-        height: 41.9rem;
-        flex: 21px .59;
+        height: 45rem;
+        flex: 27px .59;
         color: white;
-        background-color: rgba(91, 138, 114, 0.9);;
+        background-color: rgba(91, 138, 114, 0.9);
+    .mainpage_content {
+        padding-left: 16rem;
+        padding-top: 5rem;
+        h1{
+            font-size: 4rem;
+            font-weight: 900;
+            letter-spacing: .15rem;
+        }
+        h4{
+            padding: 1.5rem 0  4rem .25rem;
+        }
+        .meet{
+            padding-left: 4px;
+            color: #141700;
+            span{
+                padding-right: .75rem;
+            }
+            #name{
+                display: inline-block;
+                font-weight: 900;
+            }
+            padding-bottom: 5rem;
+        }
+        .scrolldown{
+            padding-left: 4px;
+        }
+    }
     }
 }
