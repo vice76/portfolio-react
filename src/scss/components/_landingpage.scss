@@ -2,12 +2,14 @@
     display: flex;
     flex-wrap: wrap;
     .mainpage_left{
-        height: 45rem;
-        flex: 27px .59;
+        height: 47rem;
+        width: 59.6% !important;
         color: white;
         background-color: rgba(91, 138, 114, 0.9);
+        //z-index: -10;
     .mainpage_content {
         padding-left: 16rem;
+        padding-right: 3.7rem;
         padding-top: 5rem;
         h1{
             font-size: 4rem;
@@ -27,10 +29,17 @@
                 display: inline-block;
                 font-weight: 900;
             }
-            padding-bottom: 5rem;
+            padding-bottom: 6rem;
         }
         .scrolldown{
             padding-left: 4px;
+        }
+        .mainpage_anime{
+            padding-left: 58.4rem;
+            margin: -24rem;
+            .hero-design{
+                z-index: -1;
+            }
         }
     }
     }
